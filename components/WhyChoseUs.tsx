@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
 
         <ul className="text-lg md:text-xl space-y-3 font-medium drop-shadow-md">
           <li>✔ 110+ well-maintained buses</li>
-          <li>✔ 300+ employee transportation trips daily</li>
+          <li>✔ 3200+ employee transportation trips daily</li>
           <li>✔ Professionally trained drivers</li>
           <li>✔ Real-time fleet monitoring</li>
           <li>✔ 24/7 support & operations team</li>

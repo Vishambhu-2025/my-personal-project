@@ -51,10 +51,20 @@ export default function Footer() {
           <p className="text-gray-400 text-sm flex items-center gap-2 mb-2 hover:text-white transition-all duration-300 hover:translate-x-1">
             <Mail size={16} className="transition-colors duration-300" />
             <Link
-              href="mailto:operations@vishambhutravels.com"
+              href="mailto:vikas@vishambhutravels.com"
               className="transition-colors duration-300"
             >
-              operations@vishambhutravels.com
+              vikas@vishambhutravels.com
+            </Link>
+          </p>
+          {/* Email */}
+          <p className="text-gray-400 text-sm flex items-center gap-2 mb-2 hover:text-white transition-all duration-300 hover:translate-x-1">
+            <Mail size={16} className="transition-colors duration-300" />
+            <Link
+              href="mailto:sachin@vishambhutravels.com"
+              className="transition-colors duration-300"
+            >
+              sachin@vishambhutravels.com
             </Link>
           </p>
 
