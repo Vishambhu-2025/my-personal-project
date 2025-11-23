@@ -15,7 +15,7 @@ export default function Navbar() {
         {/* Left Side: Logo */}
         <div className="flex items-center gap-2 pl-3 md:pl-4">
           <Image
-            src="/logo.webp"
+            src="/logo.jpeg"
             alt="Vishambhu Travels Logo"
             width={32}
             height={32}
