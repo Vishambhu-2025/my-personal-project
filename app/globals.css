@@ -2,7 +2,22 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+/* app/globals.css */
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Moves exactly half way (the length of one list) */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite; /* Adjust 30s to make it faster/slower */
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

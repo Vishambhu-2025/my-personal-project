@@ -4,13 +4,13 @@ export default function WhyChooseUs() {
   return (
     <section className="relative w-full h-[55vh] md:h-[70vh]">
       <Image
-        src="/whychooseus.png"
+        src="/whychooseus1.jpeg"
         alt="Why Choose Us"
         fill
         className="
         object-cover 
         brightness-[0.65]
-        object-[20%]        
+        object-[18%]        
         md:object-center     
       "
         priority

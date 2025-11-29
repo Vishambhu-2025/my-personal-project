@@ -14,7 +14,7 @@ export default function Home() {
       <Welcome />
       <WhyChooseUs />
       <Services />
-      {/* <Clients /> */}
+      <Clients />
       <Footer />
     </main>
   );
