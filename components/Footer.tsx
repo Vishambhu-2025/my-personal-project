@@ -76,7 +76,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Nakhate Complex, Shanti Colony, Kalewadi,
+              Sr No 99/5, Nakhate Complex, Vijay Nagar
               <br />
               Pimpri-Chinchwad, Maharashtra 411017
             </Link>
