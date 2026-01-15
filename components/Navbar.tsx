@@ -32,6 +32,7 @@ export default function Navbar() {
             { label: "Home", link: "#home" },
             { label: "About", link: "#about" },
             { label: "Services", link: "#services" },
+            { label: "Book Trip", link: "/book-trip" },
             // { label: "Clients", link: "#clients" },
             { label: "Contact Us", link: "#contact" },
           ].map((item) => (
@@ -77,6 +78,9 @@ export default function Navbar() {
             {/* <Link href="#clients" onClick={() => setOpen(false)}>
               Clients
             </Link> */}
+            <Link href="/book-trip" onClick={() => setOpen(false)}>
+              Book Trip
+            </Link>
             <Link href="#contact" onClick={() => setOpen(false)}>
               Contact Us
             </Link>
