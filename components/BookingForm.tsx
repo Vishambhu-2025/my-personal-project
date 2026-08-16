@@ -9,6 +9,7 @@ export default function BookingForm() {
     contactNumber: "",
     fromLocation: "",
     toLocation: "",
+    date: "",
   });
 
   const [errors, setErrors] = useState({
@@ -16,6 +17,7 @@ export default function BookingForm() {
     contactNumber: "",
     fromLocation: "",
     toLocation: "",
+    date: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -34,6 +36,7 @@ export default function BookingForm() {
       contactNumber: "",
       fromLocation: "",
       toLocation: "",
+      date: "",
     };
 
     // Name validation: min 2 characters
@@ -70,6 +73,12 @@ export default function BookingForm() {
       isValid = false;
     } else if (formData.toLocation.trim().length < 3) {
       newErrors.toLocation = "Location must be at least 3 characters";
+      isValid = false;
+    }
+
+    // Date validation
+    if (!formData.date.trim()) {
+      newErrors.date = "Travel date is required";
       isValid = false;
     }
 
@@ -180,6 +189,28 @@ export default function BookingForm() {
         />
         {errors.toLocation && (
           <p className="text-red-500 text-xs mt-1">{errors.toLocation}</p>
+        )}
+      </div>
+
+      <div>
+        <label
+          htmlFor="date"
+          className="block text-sm font-medium text-gray-700 mb-1"
+        >
+          Travel Date *
+        </label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          value={formData.date}
+          onChange={handleChange}
+          className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-black ${
+            errors.date ? "border-red-500" : "border-gray-300"
+          }`}
+        />
+        {errors.date && (
+          <p className="text-red-500 text-xs mt-1">{errors.date}</p>
         )}
       </div>
 

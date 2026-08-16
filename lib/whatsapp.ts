@@ -6,6 +6,7 @@ export interface BookingDetails {
   contactNumber: string;
   fromLocation: string;
   toLocation: string;
+  date: string;
 }
 
 export function formatBookingMessage(details: BookingDetails): string {
@@ -17,6 +18,7 @@ Name: ${details.name}
 Contact Number: ${details.contactNumber}
 From Location: ${details.fromLocation}
 To Location: ${details.toLocation}
+Travel Date: ${details.date}
 
 Please get back to me with the details.`;
 }
